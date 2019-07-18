@@ -2,12 +2,14 @@ import React,{Component} from 'react';
 import './css/estilo.css'
 import './App.css';
 import NavBar from './ui/Navbar';
+import Home from './container/Home'
 class App extends Component{
   render( ){
-
+    const logo = 'SIEBA'
     return (
       <div className="container">
-        <NavBar />
+        <NavBar  logo={logo}/>
+        <Home />
       </div>
     );
   }
