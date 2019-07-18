@@ -1,13 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{Component} from 'react';
+import './css/estilo.css'
 import './App.css';
+import NavBar from './ui/Navbar';
+class App extends Component{
+  render( ){
 
-function App() {
-  return (
-    <div className="container">
-      Texto qualquer
-    </div>
-  );
+    return (
+      <div className="container">
+        <NavBar />
+      </div>
+    );
+  }
 }
+
+  
+
 
 export default App;
